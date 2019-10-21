@@ -8,7 +8,10 @@ const btnRight = document.querySelector('#right-arrow')
 // Counter
 
 let counter = 0;
-const size = imagesEl.clientWidth;
+// had to hardcode... grabbing the desktop width sometimes
+// const size = imagesEl.clientWidth;
+const size = 183;
+
 
 // slider.style.transform = 'translateX(' + (-size * counter) + 'px)'
 
