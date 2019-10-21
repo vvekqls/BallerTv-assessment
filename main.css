@@ -30,7 +30,7 @@ body {
 /* header */
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fed-assessment-template/Img/Header/Page1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./Img/Header/Page1.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -217,14 +217,28 @@ header {
 /* Join */
 
 .join {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/fed-assessment-template/Img/Join/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"),
-  url("/fed-assessment-template/Img/Group/Path\ 2.png");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Img/Join/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"),
+  url("/Img/Group/Path\ 2.png"); */
   background-size: 100% 70%; 
   height: 70vh;
   background-repeat: no-repeat;
   position: relative
 }
+.join-image-container {
+  position: relative;
+  width: 100%;
+}
 
+.join-image-container img {
+  position: absolute;
+  width: 100%;
+  min-height: 450px;
+}
+
+.join-image-container img:nth-child(3) {
+  z-index: -10;
+  top: -46px;
+}
 .join-text-box {
   position: absolute;
   top: 30%;
@@ -267,6 +281,8 @@ i {
 .values h2 {
   text-align: center;
   padding-bottom: 100px;
+  color: black;
+  font-size: 2rem;
 }
 .values-container {
   column-count: 2;
@@ -423,6 +439,11 @@ footer img {
     color: #fff;
     font-size: 180%;
     font-weight: lighter;
+  }
+  /* btn */
+  .btn {
+    padding: 10px 10px;
+    width: 220px;
   }
   /* Icon css */
   i {
