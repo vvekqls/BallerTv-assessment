@@ -11,17 +11,30 @@ html {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
+a {
+  text-decoration: none;
+  color: rgb(228, 90, 35);
+}
+img {
+   image-rendering: auto;
+}
 
 body {
   font-size: 16px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 /* header */
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/fed-assessment-template/Img/Header/Page1.png");
-  height: 100vh;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .logo {
@@ -33,6 +46,7 @@ header {
   display: block;
   padding-left: 2rem;
   padding-top: 1.2rem;
+  
 }
 
 .header-text {
@@ -41,7 +55,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 790px;
+  max-width: 790px;
 } 
 
 .header-text h1 {
@@ -60,13 +74,16 @@ header {
   font-weight: lighter;
 }
 
-/* session */
+/* vision section */
 
 .vision-text {
-  height: 100vh;
+  
   text-align: center;
-  width: 650px;
+  max-width: 650px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  width: 100%;
+  
 }
 
 .vision-text h3 {
@@ -79,9 +96,310 @@ header {
   font-size: 1rem;
   padding: 20px 0;
   line-height: 1.6;
+  margin: 0 20px;
+}
+
+/* group logos css*/
+
+.group {
+  /* background-image: url("/fed-assessment-template/Img/Group/Path\ 2.png"),
+  url("/fed-assessment-template/Img/Group/Path\ 1.png");
+  height: 50vh;  
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  width: 100%;
+  position: relative;
+  height: 60vh;
+}
+.text-context {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.group-img-container {
+  width: 100%;
+  position: relative;
+}
+
+.group-img-container img {
+  position: absolute;
+  width: 100%;
+  
+}
+.group-img-container img:nth-child(2) {
+  top: 30px;
+  min-height: 500px;
+}
+
+.text-context h4{
+  position: absolute;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.6;
+  width: 386px;
+}
+
+.logo-showcase {
+  break-inside: avoid;
+  list-style: none;
+  position: absolute;
+  column-count: 4;
+  left: 15%;
+  top: 50%;
+  column-gap: 50px;
+  padding-right: 100px;
+  max-width: 1240px;
+}
+
+.logo-showcase img {
+  break-inside: avoid;
+  width: 100%;
+  height: 23px;
+  margin-bottom: 40px;
+}
+
+#left-arrow {
+  top: 55%;
+  height: 30px;
+  left: 10%;
+  display: none;
+}
+
+#right-arrow {
+  left: 84%;
+  top: 55%;
+  height: 30px;
+  z-index: 500;
+  display: none;
+}
+.arrows-icons img{
+  position: absolute;
+
+}
+
+/* ourteam */
+
+.ourteam {
+  
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 100%;
+  
+}
+
+.ourteam h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 150px 0 30px  0;
+  color: black;
+}
+
+.ourteam p {
+  font-size: 0.9rem;
+  padding: 20px 0;
+  line-height: 1.6;
+  margin: 0 20px;
+}
+
+/* Join */
+
+.join {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/fed-assessment-template/Img/Join/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"),
+  url("/fed-assessment-template/Img/Group/Path\ 2.png");
+  background-size: 100% 70%; 
+  height: 70vh;
+  background-repeat: no-repeat;
+  position: relative
+}
+
+.join-text-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.join-text-box h4 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 40px;
+}
+.btn-full {
+  background-color: rgb(231, 54, 0)
+}
+
+/* icons */
+
+i {
+  display: flex;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+/* values */
+.values {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+.values h2 {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.values-container {
+  column-count: 2;
+  width: 100%;
+  column-gap: 100px;
+}
+.context h3 {
+  color: black;
+}
+.values-container section {
+  break-inside: avoid;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 35px;
+}
+
+.head {
+  text-align: center;
+}
+
+/* footer and group 7 */
+
+.group7 {
+  height: 50vh;
+  position: relative;
+  /* margin-top: 100px; */
+}
+
+.container img {
+  width: 100%;
+  position: absolute;
+  max-height: 400px;
+  height: 100%;
+}
+
+.container img:nth-child(2) {
+  max-height: 450px;
+}
+/* group context-box section css*/
+.group-context-box {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.group-context-box h3 {
+  margin-bottom: 70px;
+  bottom: 50px;
+  font-size: 1.3rem;
+}
+.content-box {
+  display: flex;
+  width: 100%;
+  min-width: 740px;
+}
+.join-team {
+  margin-right: 25px;
+  position: relative;
+  width: 100%;
+}
+.join-team p, .join-team h5{
+  color: black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  left: 40%;
+  line-height: 1.6;
+}
+
+#rectangle {
+  width: 100%;
+  max-width: 451px;
+}
+.join-team h5 {
+  top: 55%;
+  width: 171px;
+  font: 1.2rem;
+  color: rgb(228, 90, 35);
+}
+.join-team p {
+  top: 30%;
+  left: 49%;
+  width: 233px;
+}
+
+.join-broad {
+  position: relative;
+  width: 100%
+}
+
+.join-broad p, .join-broad h5{
+  color: black;
+  position: absolute; 
+  transform: translate(-50%, -50%);
+  text-align: left;
+  line-height: 1.6;
+}
+
+.join-broad h5 {
+  top: 60%;
+  font: 1.2rem;
+  color: rgb(228, 90, 35);
+  left: 36%;
+  width: 170px
+}
+.join-broad p {
+  top: 30%;
+  width: 302px;
+  left: 54%;
+}
+
+#arrow-icon {
+  padding-left: 10px; 
+}
+/* footer section css */
+footer {
+  z-index: -10;
+  position: relative;
+  bottom: 60px;
+}
+footer img {
+  width: 100%;
+  max-height: 200px;
+  position: absolute;
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
   .header-text {
     position: absolute;
     top: 43%;
@@ -106,4 +424,132 @@ header {
     font-size: 180%;
     font-weight: lighter;
   }
+  /* Icon css */
+  i {
+    margin-bottom: 15px;
+  }
+  /* values section css */
+  .values h2 {
+    padding-bottom: 50px;
+  }
+
+  .values-container {
+    column-count: 1;
+    text-align: center;
+  }
+
+  .values-container section {
+    break-inside: avoid;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 35px;
+  }
+  /* logos sections */
+  .logo-showcase img:nth-child(7) {
+    padding-right: 60px;
+    padding-left: 0;
+  }
+  .logo-showcase img:nth-child(4) {
+    padding-right: 60px;
+    padding-left: 0;
+  }
+  .logo-showcase {
+    position: absolute;
+    column-count: unset !important;
+    left: 36%;
+    overflow: hidden;
+    max-width: 183px;
+    max-height: 160px;
+    width: 100%;
+    height: 100%;
+    top: 48%;
+  }
+  .logo-showcase img {
+    width: 165px;
+    height: 21%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .text-context h4 {
+    width: 270px;
+  }
+
+  #left-arrow, #right-arrow {
+    display: block;
+    z-index: 500;
+    cursor: pointer;
+  }
+  /* slider section css */
+  .slider {
+    display: flex;
+    flex-flow: row wrap;
+    width: 550px;
+    justify-content: space-between;
+    transform: translateX(28px);
+  }
+/* footer and group7 section */
+  .group-context-box h3 {
+      position: absolute;
+      left: 35%;
+      top: 15%;
+      font-size: 1.3rem;
+      color: #fff;
+  }
+  .container img:nth-child(1) {
+    top: 9%;
+  }
+  .container img:nth-child(2) {
+    height: 550px;
+    top: 30%;
+  }
+
+  #rectangle {
+    width: 100%;
+    max-width: 351px;
+  }
+  .join-team {
+    top: 130px;
+
+  }
+
+  .join-team p {
+    top: 30%;
+    left: 50%;
+    width: 228px;
+    line-height: 1.6;
+  }
+  .join-team h5 {
+    top: 55%;
+    left: 46%;
+    font: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .join-broad {
+    top: 101px;
+  }
+  .join-broad p {
+    top: 15%;
+    width: 220px;
+    left: 49%;
+  }
+  .join-broad h5 {
+    top: 60%;
+    font: 1.2rem;
+    left: 46%;
+    width: 170px;
+  }
+  .content-box {
+    display: block;
+    width: 100%;
+  }
+  footer {
+    z-index: -10;
+    position: relative;
+    top: 79px;
+  }
+  footer img {
+    height: 150px
+  }
+
 }
