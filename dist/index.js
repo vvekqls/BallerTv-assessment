@@ -8,7 +8,7 @@ const btnRight = document.querySelector('#right-arrow')
 // Counter
 
 let counter = 0;
-// had to hardcode... grabbing the desktop width sometimes
+// had to hardcode. because sometimes it's grabbing the desktop version width .
 // const size = imagesEl.clientWidth;
 const size = 183;
 
