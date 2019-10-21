@@ -19,8 +19,14 @@
   },
   "homepage": "https://github.com/vvekqls/BallerTv-assessment#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
   }
 }

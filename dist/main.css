@@ -477,7 +477,7 @@ footer img {
   .logo-showcase {
     position: absolute;
     column-count: unset !important;
-    left: 36%;
+    left: 30%;
     overflow: hidden;
     max-width: 183px;
     max-height: 160px;
@@ -493,6 +493,7 @@ footer img {
   }
   .text-context h4 {
     width: 270px;
+    left: 44%;
   }
 
   #left-arrow, #right-arrow {
