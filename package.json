@@ -1,0 +1,22 @@
+{
+  "name": "ballertv",
+  "version": "1.0.0",
+  "description": "assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvekqls/BallerTv-assessment.git"
+  },
+  "author": "David D Song",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvekqls/BallerTv-assessment/issues"
+  },
+  "homepage": "https://github.com/vvekqls/BallerTv-assessment#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}
