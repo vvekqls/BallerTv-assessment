@@ -46,3 +46,5 @@ btnLeft.addEventListener('click', () => {
   counter--;
   slider.style.transform = 'translateX(' + (-size * counter) + 'px)'
 })
+
+

@@ -37,6 +37,9 @@ header {
   width: 100%;
 }
 
+/* .slider {
+  transform: translateX(28px); */
+
 .logo {
   background-color: black;
   height: 77px;
@@ -237,7 +240,8 @@ header {
 
 .join-image-container img:nth-child(3) {
   z-index: -10;
-  top: -46px;
+    top: -30px;
+    min-height: 100px;
 }
 .join-text-box {
   position: absolute;
