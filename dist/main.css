@@ -216,35 +216,36 @@ header {
   margin: 0 20px;
 }
 
-/* Join */
+/* Join section css*/
 
-.join {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Img/Join/Employer-Branding.-Blueprint-Creative-Article-for-Business-Barbados.png"),
-  url("/Img/Group/Path\ 2.png"); */
-  background-size: 100% 70%; 
-  height: 70vh;
-  background-repeat: no-repeat;
-  position: relative
-}
 .join-image-container {
   position: relative;
   width: 100%;
 }
 
-.join-image-container img {
-  position: absolute;
+.join-image-container img:nth-child(1) {
   width: 100%;
-  min-height: 450px;
+  min-height: 500px;
+}
+#join-3rd-img {
+  min-height: 200px;
+}
+.join-2nd {
+  min-height: 500px;
+}
+.join-2nd, .join-3rd {
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+.join-3rd { 
+    z-index: -10;
+    top: -5px;
 }
 
-.join-image-container img:nth-child(3) {
-  z-index: -10;
-    top: -30px;
-    min-height: 100px;
-}
 .join-text-box {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -512,6 +513,11 @@ footer img {
     justify-content: space-between;
     transform: translateX(28px);
   }
+/* join section css */
+
+.join-3rd { 
+    top: -30px;
+}
 /* footer and group7 section */
   .group-context-box h3 {
       position: absolute;
@@ -536,7 +542,6 @@ footer img {
     top: 130px;
 
   }
-
   .join-team p {
     top: 30%;
     left: 50%;
