@@ -82,7 +82,7 @@ header {
 .vision-text {
   
   text-align: center;
-  max-width: 650px;
+  max-width: 795px;
   margin: 0 auto;
   padding-bottom: 100px;
   width: 100%;
@@ -105,15 +105,8 @@ header {
 /* group logos css*/
 
 .group {
-  /* background-image: url("/fed-assessment-template/Img/Group/Path\ 2.png"),
-  url("/fed-assessment-template/Img/Group/Path\ 1.png");
-  height: 50vh;  
-  position: relative;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
   width: 100%;
   position: relative;
-  height: 60vh;
 }
 .text-context {
   position: absolute;
@@ -129,15 +122,20 @@ header {
 }
 
 .group-img-container img {
-  position: absolute;
   width: 100%;
-  
 }
-.group-img-container img:nth-child(2) {
+.group-img-container img:nth-child(1) {
   top: 30px;
   min-height: 500px;
 }
+#img-child {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: -30px;
+  z-index: -1;
 
+}
 .text-context h4{
   position: absolute;
   text-align: center;
@@ -158,11 +156,11 @@ header {
   list-style: none;
   position: absolute;
   column-count: 4;
-  left: 15%;
-  top: 50%;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
   column-gap: 50px;
-  padding-right: 100px;
-  max-width: 1240px;
+  max-width: 1360px;
 }
 
 .logo-showcase img {
@@ -170,6 +168,7 @@ header {
   width: 100%;
   height: 23px;
   margin-bottom: 40px;
+  min-width: 120px;
 }
 
 #left-arrow {
@@ -481,13 +480,11 @@ footer img {
   .logo-showcase {
     position: absolute;
     column-count: unset !important;
-    left: 30%;
     overflow: hidden;
     max-width: 183px;
     max-height: 160px;
     width: 100%;
     height: 100%;
-    top: 48%;
   }
   .logo-showcase img {
     width: 165px;
@@ -497,9 +494,11 @@ footer img {
   }
   .text-context h4 {
     width: 270px;
-    left: 44%;
   }
-
+  #img-child {
+    height: 100px;
+    top: -25px;
+  }
   #left-arrow, #right-arrow {
     display: block;
     z-index: 500;
