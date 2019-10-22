@@ -308,18 +308,24 @@ i {
 }
 
 /* footer and group 7 */
-
-.group7 {
-  height: 50vh;
+.container {
   position: relative;
-  /* margin-top: 100px; */
 }
 
-.container img {
+.group-7-orange img, .group-7-img img{
   width: 100%;
+  min-height: 150px;
+}
+
+.group-7-orange img{
+  min-height: 500px;  
+}
+
+.group-7-img {
   position: absolute;
-  max-height: 400px;
-  height: 100%;
+  top: -30px;
+  z-index: -5;
+  width: 100%;
 }
 
 .container img:nth-child(2) {
@@ -328,7 +334,7 @@ i {
 /* group context-box section css*/
 .group-context-box {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -526,14 +532,6 @@ footer img {
       font-size: 1.3rem;
       color: #fff;
   }
-  .container img:nth-child(1) {
-    top: 9%;
-  }
-  .container img:nth-child(2) {
-    height: 550px;
-    top: 30%;
-  }
-
   #rectangle {
     width: 100%;
     max-width: 351px;
