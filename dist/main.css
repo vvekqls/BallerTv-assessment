@@ -33,7 +33,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./Img/Header/Page1.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
 }
 
@@ -49,7 +49,7 @@ header {
   display: block;
   padding-left: 2rem;
   padding-top: 1.2rem;
-  
+  width: 174px;
 }
 
 .header-text {
@@ -398,30 +398,36 @@ i {
   top: 60%;
   font: 1.2rem;
   color: rgb(228, 90, 35);
-  left: 36%;
+  left: 33%;
   width: 170px
 }
 .join-broad p {
   top: 30%;
   width: 302px;
-  left: 54%;
+  left: 50%;
 }
 
 #arrow-icon {
   padding-left: 10px; 
 }
 /* footer section css */
-footer {
-  z-index: -10;
-  position: relative;
-  bottom: 60px;
+.container-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-footer img {
+.footer-img-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 300px;
+    z-index: -10;
+}
+.footer-img-container img {
   width: 100%;
-  max-height: 200px;
-  position: absolute;
+  min-height: 350px;
 }
-
+  
 @media only screen and (max-width: 768px) {
   .header {
     width: 100%;
@@ -534,7 +540,7 @@ footer img {
   }
   #rectangle {
     width: 100%;
-    max-width: 351px;
+    max-width: 310px;
   }
   .join-team {
     top: 130px;
@@ -571,13 +577,4 @@ footer img {
     display: block;
     width: 100%;
   }
-  footer {
-    z-index: -10;
-    position: relative;
-    top: 79px;
-  }
-  footer img {
-    height: 150px
-  }
-
 }
