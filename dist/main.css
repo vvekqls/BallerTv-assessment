@@ -33,7 +33,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./Img/Header/Page1.png");
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
 }
 
